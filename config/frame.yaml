@@ -1,4 +1,4 @@
-bizRouteConfig:
+pixiu-product:
   sortation:
     clusterKey: common
     index: sortation_fs0_a
