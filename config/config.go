@@ -1,21 +1,21 @@
 package config
 
 var (
-	BizRouteConfig = make(map[string]map[string]ClusterInfo)
+	Config = make(map[string]map[string]info)
 )
 
-type ClusterInfo struct {
-	ClusterKey string
-	Index      string
+type info struct {
+	Key string
+	I   string
 }
 
-func NewReConfig() (map[string]map[string]ClusterInfo, error) {
-	return BizRouteConfig, LoadDefaultConf(&BizRouteConfig, "frame", "overwrite")
+func NewReConfig() (map[string]map[string]info, error) {
+	return Config, LoadDefaultConf(&Config, "frame", "overwrite")
 }
 
-//func (c *ClusterInfo) getClusterKey() string {
+//func (c *info) getClusterKey() string {
 //	return c.ClusterKey
 //}
-//func (c *ClusterInfo) setClusterKey(key string) {
+//func (c *info) setClusterKey(key string) {
 //	c.ClusterKey = key
 //}

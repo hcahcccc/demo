@@ -1,7 +1,7 @@
-pixiu-product:
-  sortation:
-    clusterKey: common
-    index: sortation_fs0_a
-  blog:
-    clusterKey: common
-    index: blog_fs0_a
+product:
+  audio:
+    key: audio
+    i: index_1
+  image:
+    key: image
+    i: index_1
